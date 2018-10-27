@@ -14,6 +14,6 @@ public class HelloController {
 
 	@RequestMapping("/hello")
 	public String hello() {
-	    return "Hello World! Welcome to visit waylau.com!";
+	    return "Hello World! Welcome to visit www.bestgogo.cc!";
 	}
 }

@@ -129,7 +129,7 @@ public class UserspaceController {
 		model.addAttribute("keyword", keyword);
 		model.addAttribute("page", page);
 		model.addAttribute("blogList", list);
-		return (async == true ? "/userspace/u :: #mainContainerRepleace" : "/userspace/u");
+		return (async == true ? "userspace/u :: #mainContainerRepleace" : "userspace/u");
 	}
 
 	/**
@@ -182,7 +182,7 @@ public class UserspaceController {
 		model.addAttribute("isBlogOwner", isBlogOwner);
 		model.addAttribute("blogModel", blog);
 
-		return "/userspace/blog";
+		return "userspace/blog";
 	}
 
 	/**
@@ -330,7 +330,7 @@ public class UserspaceController {
 		}
 
 		userService.saveOrUpateUser(originalUser);
-		return "redirect:/u/" + username + "/profile";
+		return "redirect:u/" + username + "/profile";
 	}
 
 	/**

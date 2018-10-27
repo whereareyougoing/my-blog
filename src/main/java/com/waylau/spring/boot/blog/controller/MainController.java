@@ -33,12 +33,12 @@ public class MainController {
 	
 	@GetMapping("/")
 	public String root() {
-		return "redirect:/index";
+		return "redirect:index";
 	}
 	
 	@GetMapping("/index")
 	public String index() {
-		return "redirect:/blogs";
+		return "redirect:blogs";
 	}
 
 	@GetMapping("/login")
@@ -69,7 +69,7 @@ public class MainController {
 		authorities.add(authorityService.getAuthorityById(ROLE_USER_AUTHORITY_ID).get());
 		user.setAuthorities(authorities);
         userService.registerUser(user);
-        return "redirect:/login";
+        return "redirect:login";
     }
 	
 }

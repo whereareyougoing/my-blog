@@ -70,7 +70,8 @@ public class CatalogController {
 		
 		model.addAttribute("isCatalogsOwner", isOwner);
 		model.addAttribute("catalogs", catalogs);
-		return "/userspace/u :: #catalogRepleace";
+		// return "/userspace/u :: #catalogRepleace";
+		return "userspace/u :: #catalogRepleace";
 	}
 	
 	/**
@@ -130,7 +131,7 @@ public class CatalogController {
 	public String getCatalogEdit(Model model) {
 		Catalog catalog = new Catalog(null, null);
 		model.addAttribute("catalog",catalog);
-		return "/userspace/catalogedit";
+		return "userspace/catalogedit";
 	}
 	
 	/**
@@ -149,7 +150,8 @@ public class CatalogController {
 		}
 		
 		model.addAttribute("catalog",catalog);
-		return "/userspace/catalogedit";
+		// return "/userspace/catalogedit";
+		return "userspace/catalogedit";
 	}
 	
 }
